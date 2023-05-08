@@ -25,6 +25,7 @@ def premiot(request):
         file03 = request.FILES.get('file_input_03')
     
         case = Case.objects.create()
+        case.name = "Premiot"
         case.first_name = first_name
         case.last_name = last_name
         case.email = email

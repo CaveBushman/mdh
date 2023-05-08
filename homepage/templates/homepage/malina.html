@@ -1,0 +1,64 @@
+{% extends 'base.html' %} {% block title %} MDH Legal s.r.o. - kauza Malina{% endblock title %} 
+{% load static %} {% block content %}
+
+<div class="flex flex-row mx-auto my-10 w-4/5">
+  <div class="basis-1/4 md:basis-1/3"><a href="#" class="mt-10 ml-10"><img src="{% static 'images/Logo-header.svg'%}" alt="" class="image"/></a></div>
+  <div class="basis-1/4 md:basis-1/3"></div>
+  <div class="basis-1/2 md:basis-1/3 text-end my-auto"><a href="{% url 'homepage:homepage' %}" class=" no-underline text-centerrounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50">Zpět na stránky MDH Legal s.r.o.</a></div>
+</div>
+
+<div class="w-4/5 mx-auto mb-10">
+    <div class="text-justify ">
+        <h2 class = "text-3xl">Informace pro věřitele společnosti Energetický holding Malina, a.s.</h2>
+        <p class = "text-gray-700 text-lg mt-5">
+        Advokátní kancelář MDH Legal, s.r.o. oznamuje, že převzala právní zastoupení společnosti 
+        Energetický Holding Malina, a.s., IČ 109 31 201, se sídlem Krakovská 583/9, Praha 1 – Nové Město, 
+        PSČ 110 00, v rámci insolvenčního návrhu spojeného s návrhem na povolení reorganizace a 
+        bude rovněž ji právně zastupovat v insolvenčním řízení.
+        </p>
+        <p class = "text-gray-700 text-lg mt-3">
+        <span class = "italic">„Podání insolvenčního návrhu pro hrozící úpadek spojeného s návrhem na 
+            povolení reorganizace pro věřitele znamená, že své pohledávky vůči Malině budou muset 
+            uplatnit u insolvenčního soudu přihláškou na příslušném formuláři. Již jsme zaznamenali, 
+            že někteří kolegové advokáti či advokátní kanceláře klienty Maliny zastupují. V rámci 
+            maximální otevřenosti a transparentnosti vedení Maliny zveřejní jejich jména na svých 
+            internetových stránkách, aby se i další klienti Maliny mohli na tyto kanceláře obrátit. 
+            Cílem reorganizace je dokončení rozdělaných instalací, restrukturalizace společnosti, 
+            snížení nákladů spojených s provozem společnosti, aby společnost současný stav překonala, 
+            dostála svým závazků v co nejvyšší možné míře a byl zachován i dál její provoz,” </span> 
+            sdělil Mgr. Bc. Michal Hora, advokát a společník MDH Legal, s.r.o.
+        </p>
+
+        <p class = "text-gray-700 text-lg mt-3">
+        Pro zákazníky Maliny a další věřitele jsou veškeré informace zveřejněny na internetových stránkách <a href = "http://www.malinagroup.cz">www.malina.cz</a>
+        </p>
+    </div>
+
+    <div class = "mt-6">
+        <h4 class = "pt-6">Důležité odkazy:</h4>
+            <ul>
+                <li> <a href = "https://malinagroup.cz/wp-content/uploads/documents/media2/Email_Informace pro z%C3%A1kazn%C3%ADky 5.5.2023.pdf?_t=1683308149">Průvodní dopis EH Malina</a></li>
+                <li> <a href = "https://malinagroup.cz/wp-content/uploads/documents/media2/D%C5%AFle%C5%BEit%C3%A9 ot%C3%A1zky a odpov%C4%9Bdi pro z%C3%A1kazn%C3%ADky EH Malina.pdf?_t=1683308044">Důležité otázky a odpovědi pro zákazníky EH Malina</a></li>
+                <li> <a href = "https://malinagroup.cz/wp-content/uploads/documents/media2/D%C5%AFle%C5%BEit%C3%A9 ot%C3%A1zky a odpov%C4%9Bdi pro dodavatele a partnery EH Malina.pdf?_t=1683308169">Důležité otázky a odpovědi pro dodavatele a partnery EH Malina</a></li>
+                <li> <a href = "https://malinagroup.cz/wp-content/uploads/documents/media2/Energetick%C3%BD Holding Malina chce dod%C4%9Blat v%C5%A1echny zak%C3%A1zky klient%C5%AF. Proto pod%C3%A1v%C3%A1 insolven%C4%8Dn%C3%AD n%C3%A1vrh.pdf?_t=1683308713">Tisková zpráva</a></li>
+            </ul>
+        </div>
+
+        <div class = "mt-6">
+            <h4 class = "pt-6">Důležité kontakty:</h4>
+            <ul>
+                <li><a href = "mailto:zakaznici@malinagroup.cz" >zakaznici@malinagroup.cz</a></li>
+                <li><a href = "mailto:reklamace@malinagroup.cz" >reklamace@malinagroup.cz</a></li>
+                <li><a href = "mailto:media@malinagroup.cz" >media@malinagroup.cz</a></li>
+                <li><a href = "mailto:malina@mdhlegal.cz" >malina@mdhlegal.cz</a></li>
+            </ul>
+        </div>
+
+        <div class = "grid grid-cols-3 text-gray-700 text-lg mt-6">
+            <div>Mgr. Bc. Michal Hora, advokát a společník MDH Legal, s.r.o.</div>
+            <div></div>
+            <div> Mgr. et Mgr. David Průša, advokát a společník MDH Legal, s.r.o.</div>
+        </div>
+    </div>
+</div>
+{% endblock %}

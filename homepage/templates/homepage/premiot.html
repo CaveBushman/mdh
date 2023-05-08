@@ -1,0 +1,151 @@
+{% extends 'base.html' %} {% block title %} MDH Legal s.r.o. - kauza Premiot{% endblock title %}
+{% load static %}
+{% block content %}
+
+<div class="flex flex-row mx-auto my-10 w-4/5">
+  <div class="basis-1/4 md:basis-1/3"><a href="#" class="mt-10 ml-10"><img src="{% static 'images/Logo-header.svg'%}" alt="" class="image"/></a></div>
+  <div class="basis-1/4 md:basis-1/3"></div>
+  <div class="basis-1/2 md:basis-1/3 text-end my-auto"><a href="{% url 'homepage:homepage' %}" class=" no-underline text-centerrounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50">Zpět na stránky MDH Legal s.r.o.</a></div>
+</div>
+
+<div class="w-4/5 mx-auto mb-10">
+    <div class="text-justify ">
+        <h2 class = "text-3xl">Vymáhání pohledávek skupiny Premiot</h2>
+
+        <p class = "text-gray-700 text-lg mt-5">
+        Advokátní kancelář MDH Legal, s.r.o. nabízí své služby v oblasti insolvenčního práva 
+        pro věřitele skupiny PREMIOT. Z veřejně dostupných informací vyplývá, že nedošlo k výplatě 
+        již splatných jistin u dluhopisů, které byly splatné na konci roku 2022, přičemž splatnost 
+        dluhopisů byla k 31. 12. 2022. V této věci se na nás již obrátila řada klientů.
+        </p>
+
+        <p class = "text-gray-700 text-lg mt-5 italic">
+            Investiční skupinu Premiot Group založil český podnikatel Ondrej Spodniak spolu 
+            se svými partnery. V oblasti nemovitostí a investic se pohybuje už od roku 1999, kdy 
+            založil svou první firmu. Od roku 2011 podnikal v oblasti hotelového developmentu na
+             Srí Lance a v Indii, odkud se po čtyřletém pobytu vrátil zpět do Česka s vizí vybudovat 
+             investiční skupinu.
+        </p>
+        <p class = "text-gray-700 text-lg mt-5 italic">
+            Premiot Group se kromě realitního developmentu a investic do výnosových nemovitostí zabývá 
+            také investicemi do majetkové účasti ve středních a velkých podnicích.
+        </p>
+
+        <p class = "text-gray-700 text-lg mt-5 italic">
+           Svou strategii staví na konzervativním přístupu se zaměřením na typovou, časovou i geografickou 
+           diverzifikaci, aby tak zajistila dlouhodobý a stabilní růst spravovaného portfolia.
+        </p>
+
+        <p class = "text-gray-700 text-lg mt-5 italic">
+            Zdroj: <a href = "http://www.premiot.com">www.premiot.com</a>
+        </p>
+
+        <h2 class = "text-3xl">Mám pohledávku u skupiny PREMIOT, jak mám dále postupovat?</h2>
+
+        <p class = "text-gray-700 text-lg mt-5">
+        MDH Legal, s.r.o. nabízí zastupování věřitelů, příp. skupin věřitelů v rámci případného 
+        insolvenčního řízení společností ze skupiny PREMIOT. Věřitelé mohou využít dlouholeté 
+        zkušenosti našeho týmu s vymáháním pohledávek. Náš tým se skládá ze zkušeného týmu advokátů, 
+        kteří mají dostatečné odborné a kapacitní možnosti pro řešení Vašeho případu. Společník naší 
+        kanceláře Mgr. Bc. Michal Hora je rovněž insolvenčním správcem. 
+        </p>
+        <p class = "text-gray-700 text-lg mt-5">
+        Nejsme advokátní kanceláří, která pohledávky vykupuje, po celou dobu řízení věřitel zůstane vlastníkem pohledávky/dluhopisu. 
+        Nabízíme komplexní právní poradenství, vč. návrhu možného řešení.
+        </p>
+        <p class = "text-gray-700 text-lg mt-5">
+        Pro posouzení věci je důležité zaslání podkladů, kde Klienti mohou využít online formulář přiložený 
+        níže, příp. emailovou adresu <a href = "mailto:premiot@mdhlegal.cz">premiot@mdhlegal.cz</a>.
+        </p>
+        <p class = "text-gray-700 text-lg mt-5">
+        Věřitelé společností ve skupině, kteří mají své nároky založeny na dluhopisu či směnce a 
+        splatnost těchto cenných papírů již uplynula, mají možnost spojit se naším prostřednictvím 
+        s ostatními věřiteli a společně postupovat při vymáhání svých nároků.
+        </p>
+
+        <div class = "grid grid-cols-3 text-gray-700 text-lg mt-6">
+            <div>Mgr. Bc. Michal Hora, advokát a společník MDH Legal, s.r.o.</div>
+            <div></div>
+            <div> Mgr. et Mgr. David Průša, advokát a společník MDH Legal, s.r.o.</div>
+        </div>
+    </div>
+<div class = "bg-gray-100 rounded-md mt-10 pb-6">
+<div class = "pt-6 text-3xl text-center">
+    Kontaktujte nás
+</div>
+
+<div class = "text-gray-700 text-lg text-center mt-3">
+    Pokud máte zájem o naše služby, vyplňte prosím tento formulář a my Vás budeme kontaktovat.
+</div>
+
+<form action="#" method="POST">
+      {% csrf_token %}
+
+    <div class = "flex gap-2 mt-6 px-5">
+        <div class = "flex-1 w-32">
+            <div class="">
+                <label for="first-name" class="block text-lg font-medium leading-6 text-gray-900">Křestní jméno</label>
+                <div class="mt-2">
+                    <input type="text" name="first-name" id="first-name" autocomplete="given-name" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                </div>
+            </div>
+        </div>
+        <div class = "flex-1 w-32">
+            <div class="">
+                <label for="last-name" class="block text-lg font-medium leading-6 text-gray-900">Příjmení</label>
+                <div class="mt-2">
+                    <input type="text" name="last-name" id="last-name" autocomplete="given-name" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class = "flex gap-2 mt-6 px-5">
+        <div class = "flex-1 w-32">
+            <div class="">
+                <label for="email" class="block text-lg font-medium leading-6 text-gray-900">E-mail</label>
+                <div class="mt-2">
+                    <input type="email" name="email" id="email" autocomplete="given-name" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                </div>
+            </div>
+        </div>
+        <div class = "flex-1 w-32">
+            <div class="">
+                <label for="phone" class="block text-lg font-medium leading-6 text-gray-900">Telefon</label>
+                <div class="mt-2">
+                    <input type="text" name="phone" id="phone" autocomplete="given-name" class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class ="px-5 mt-3">
+        <label for="message" class="block mb-2 text-lg font-medium text-gray-900 dark:text-white">Místo pro vaši zprávu</label>
+        <textarea id="message" name = "message" rows="4" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Vaši zprávu napište zde..."></textarea>
+    </div>
+
+    <div class = "px-5 mt-3">
+        <label class="block mb-2 text-lg font-medium text-gray-900 dark:text-white" for="file_input_01">Vyberte soubor se scanem dluhopisu / směnky</label>
+        <input class="block w-full text-sm text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400" aria-describedby="file_input_help" id="file_input_01" name="file_input_01" type="file">
+        <p class="mt-1 text-sm text-gray-500 dark:text-gray-300" id="file_input_help">soubor ve formátu *.pdf.</p>
+    </div>
+    <div class = "px-5 mt-3">
+        <label class="block mb-2 text-lg font-medium text-gray-900 dark:text-white" for="file_input_02">Vyberte soubor se scanem emisních podmínek / smlouvy</label>
+        <input class="block w-full text-sm text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400" aria-describedby="file_input_help" id="file_input_02" name="file_input_02" type="file">
+        <p class="mt-1 text-sm text-gray-500 dark:text-gray-300" id="file_input_help">soubor ve formátu *.pdf.</p>
+    </div>
+    <div class = "px-5 mt-3">
+        <label class="block mb-2 text-lg font-medium text-gray-900 dark:text-white" for="file_input_03">Vyberte soubor se scanem částečných úhrad</label>
+        <input class="block w-full text-sm text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400" aria-describedby="file_input_help" id="file_input_03" name="file_input_03" type="file">
+        <p class="mt-1 text-sm text-gray-500 dark:text-gray-300" id="file_input_help">soubor ve formátu *.pdf.</p>
+    </div>
+    <div class ="flex justify-end px-5 mt-3">
+        <button type="submit" class="px-5 py-3 text-base font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Odešlete formulář</button>
+    </div>
+</form>
+</div>
+<br><br><br>
+</div>
+
+
+{% endblock %}

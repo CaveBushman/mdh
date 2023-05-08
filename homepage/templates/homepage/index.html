@@ -1,0 +1,563 @@
+{% extends 'base.html' %} {% block title %} MDH Legal s.r.o. - Homepage 
+{%endblock title %} 
+{% load static %} 
+{% block content %}
+
+<div
+  data-collapse="small"
+  data-animation="default"
+  data-duration="400"
+  data-easing="ease"
+  data-easing2="ease"
+  role="banner"
+  class="navbar w-nav"
+>
+  <div class="navbar-wrapper">
+    <a href="#" class="w-nav-brand"
+      ><img src="{% static 'images/Logo-header.svg'%}" alt="" class="image"
+    /></a>
+    <div class="menu-button w-nav-button">
+      <div class="icon w-icon-nav-menu"></div>
+    </div>
+    <nav role="navigation" class="nav-menu w-nav-menu">
+      <a href="#" class="link menu w-nav-link">Home</a>
+      <a href="#Sluzby" class="link menu w-nav-link">Služby</a>
+      <a href="#Onas" class="link menu w-nav-link">O nás</a>
+      <a href="#kontakt" class="link menu w-nav-link">Kontakt</a>
+    </nav>
+  </div>
+</div>
+<header id="Home" class="hero-picture">
+  <div class="body-container hero">
+    <div class="hero-header">
+      <div class="ml-auto mr-10 mb-2">
+        <div
+          class="w-96 rounded-md bg-red-700 px-5 py-3 text-md font-semibold shadow-sm hover:bg-red-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-700"
+        >
+          <a
+            href="{% url 'homepage:malina' %}"
+            class="no-underline text-white hover:text-white"
+            >Informace pro klienty EH Malina</a
+          >
+        </div>
+      </div>
+      <div class="ml-auto mr-10 mb-10">
+        <div
+          class="w-96 rounded-md bg-green-700 px-5 py-3 text-md font-semibold shadow-sm hover:bg-green-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green-700"
+        >
+          <a
+            href="{% url 'homepage:premiot' %}"
+            class="no-underline text-white hover:text-white"
+            >Informace pro klienty holdingu Premiot</a
+          >
+        </div>
+      </div>
+      <h1 class="heading-h1 white-text">
+        Insolvence není vždy jen konec, ale může být i novým začátkem.
+        Neutíkejte před problémy, nesnažte se před nimi skrýt, ale začněte je
+         řešit!<br />
+      </h1>
+      <a
+        href="mailto:info@mdhlegal.cz?subject=Kontakt%20MDH%20LEGAL%20web"
+        class="cta-button w-button"
+        >Kontaktujte nás</a
+      >
+    </div>
+  </div>
+</header>
+<section id="Sluzby" class="nase-sluzby">
+  <div class="body-container">
+    <h1 class="heading-h1">Naše služby</h1>
+    <div class="grid-wrapper">
+      <div class="w-layout-grid grid">
+        <div class="karta-nase-sluzby _1">
+          <div class="big-number-wrap">
+            <div class="big-numbers">01</div>
+          </div>
+          <div class="karta-slu-by">
+            <h2 class="heading-2">Korporátní právo, Fúze, Akvizice</h2>
+            <p class="paragraph-6">
+              Pomáháme klientům s každodenním chodem jejich firem, převezmeme
+              starosti za komplexní správu korporace.
+            </p>
+            <div
+              data-w-id="10e751e1-9ecc-b30b-1747-f436d9ef58a4"
+              class="link-wrapper"
+            >
+              <a href="#" class="link-vice w-inline-block">
+                <div class="text-link">Více</div>
+                <img
+                  src="{% static 'images/Chevron-down.svg'%}"
+                  alt=""
+                  class="chevron-down"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="karta-nase-sluzby _1">
+          <div class="big-number-wrap">
+            <div class="big-numbers">02</div>
+          </div>
+          <div class="karta-slu-by">
+            <h2 class="heading-2">Insolvence, Restrukturalizace</h2>
+            <p>
+              Máte dlouhodobou ztrátu, záporný vlastní kapitál? Neumíte nalézt
+              optimální řešení. Obáváte si přiznat, že se nacházíte v úpadku?
+            </p>
+            <div
+              data-w-id="854d3b5a-ed7e-9714-a31d-0aa798ba1124"
+              class="link-wrapper"
+            >
+              <a href="#" class="link-vice w-inline-block">
+                <div class="text-link">Více</div>
+                <img
+                  src="{% static 'images/Chevron-down.svg'%}"
+                  alt=""
+                  class="chevron-down"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="karta-nase-sluzby _1">
+          <div class="big-number-wrap">
+            <div class="big-numbers">03</div>
+          </div>
+          <div class="karta-slu-by">
+            <h2 class="heading-2">Směnečné právo</h2>
+            <p>
+              Nabízíme komplexní služby v oblasti směnečného práva. Pomůžeme Vám
+              vystavit řádnou směnku, uplatnit ji u soudu či naopak podat řádně
+              směnečné námitky.
+            </p>
+            <div
+              data-w-id="2bd15ef1-1652-f68f-09b3-09f159afae40"
+              class="link-wrapper"
+            >
+              <a href="#" class="link-vice w-inline-block">
+                <div class="text-link">Více</div>
+                <img
+                  src="{% static 'images/Chevron-down.svg'%}"
+                  alt=""
+                  class="chevron-down"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="karta-nase-sluzby _1">
+          <div class="big-number-wrap">
+            <div class="big-numbers">04</div>
+          </div>
+          <div class="karta-slu-by">
+            <h2 class="heading-2">Právo IT</h2>
+            <p>
+              Podnikáte v IT? Nabízíme Vám komplexní služby v oblasti práva
+              informačních systémů, v oblasti práva autorského, pokud software
+              či hardware vyvíjíte, či pokud jste “pouhým” uživatelem těchto
+              nástrojů.
+            </p>
+            <div
+              data-w-id="90c0725f-6c8f-f783-b8a3-131abadf68b5"
+              class="link-wrapper"
+            >
+              <a href="#" class="link-vice w-inline-block">
+                <div class="text-link">Více</div>
+                <img
+                  src="{% static 'images/Chevron-down.svg'%}"
+                  alt=""
+                  class="chevron-down"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="karta-nase-sluzby _1">
+          <div class="big-number-wrap">
+            <div class="big-numbers">05</div>
+          </div>
+          <div class="karta-slu-by">
+            <div>
+              <h2 class="heading-2">Trestní právo</h2>
+              <p>
+                Pokud se ocitnete v procesním postavení podezřelého, obviněného,
+                odsouzeného nebo svědka, tak potřebujete naši pomoc.
+              </p>
+            </div>
+            <div
+              data-w-id="e9263659-0864-de09-cf10-8c52965e75c7"
+              class="link-wrapper"
+            >
+              <a href="#" class="link-vice w-inline-block">
+                <div class="text-link">Více</div>
+                <img
+                  src="{% static 'images/Chevron-down.svg'%}"
+                  alt=""
+                  class="chevron-down"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="karta-nase-sluzby _1">
+          <div class="big-number-wrap">
+            <div class="big-numbers">06</div>
+          </div>
+          <div class="karta-slu-by">
+            <div>
+              <h2 class="heading-2">Sportovní právo</h2>
+              <p>
+                Znalost sportovního prostředí nám umožňuje nabídnout klientům
+                komplexní servis v oblasti sportovního práva, a to jak
+                individuálním sportovcům, tak i sportovním klubům.
+              </p>
+            </div>
+            <div
+              data-w-id="ea5e773b-e405-21c8-665c-1e1f7ae7dcaf"
+              class="link-wrapper"
+            >
+              <a href="#" class="link-vice w-inline-block">
+                <div class="text-link">Více</div>
+                <img
+                  src="{% static 'images/Chevron-down.svg'%}"
+                  alt=""
+                  class="chevron-down"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-w-id="039c6431-a48b-bd10-e2cd-52b9c0c094ad" class="_1-v-ce">
+        <div class="big-numbers">01</div>
+        <div class="vice-wrapper">
+          <h2 class="heading-2">Korporátní právo, Fúze, Akvizice</h2>
+          <p class="paragraph">
+            Pomáháme klientům s každodenním chodem jejich firem, převezmeme
+            starosti za komplexní správu korporace.Poskytujeme poradenství při
+            jednání o smlouvách, včetně posouzení odpovědnosti za porušení
+            smluvních ujednání.Podrobně se věnujeme právu nemovitostí. Příprava
+            kvalitní smluvní dokumentace předchází budoucím problémům.Založení
+            společnosti i její likvidace s minimálními nároky na osobní
+            angažovanost statutárních orgánů.Rozhodujete se o prodeji svého
+            podílu nebo celé firmy? Poskytujeme komplexní poradenství, včetně
+            zajištění ocenění a souvisejících daňových povinností.
+          </p>
+          <div data-w-id="039c6431-a48b-bd10-e2cd-52b9c0c094b5" class="mene">
+            <a href="#" class="link-vice w-inline-block">
+              <div class="text-link">Méně</div>
+              <img
+                src="{% static 'images/Chevron-up.svg'%}"
+                alt=""
+                class="chevron-down"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="_2-vice">
+        <div class="big-numbers">02</div>
+        <div class="vice-wrapper">
+          <h2 class="heading-2">Insolvence, Restrukturalizace</h2>
+          <p class="paragraph">
+            Máte dlouhodobou ztrátu, záporný vlastní kapitál? Neumíte nalézt
+            optimální řešení. Obáváte si přiznat, že se nacházíte v úpadku? Tým
+            advokátů se znalostí insolvenčního práva vyřeší Vaše problémy za
+            Vás. Posoudíme Vaše potíže z právního i ekonomického hlediska.
+            Navrhneme nejvhodnější řešení. Analýza neúčinných úkonů jako cesta k
+            vyšším výnosů v rámci insolvence. Předbalená reorganizace na klíč,
+            včetně ekonomických parametrů a jednání s věřiteli. Zastupování
+            věřitelů v insolvenčních řízení, příprava a podání přihlášek.
+          </p>
+          <div data-w-id="52456740-6952-3bcd-f574-b2eeaa720523" class="mene">
+            <a href="#" class="link-vice w-inline-block">
+              <div class="text-link">Méně</div>
+              <img
+                src="{% static 'images/Chevron-up.svg'%}"
+                alt=""
+                class="chevron-down"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="_3-vice">
+        <div class="big-numbers">03</div>
+        <div class="vice-wrapper">
+          <h2 class="heading-2">Směnečné právo</h2>
+          <p class="paragraph">
+            Nabízíme komplexní služby v oblasti směnečného práva. Pomůžeme Vám
+            vystavit řádnou směnku, uplatnit ji u soudu či naopak podat řádně
+            směnečné námitky. Směnka je opravdu tvrdým a ryze formálním
+            nástrojem, u něhož se vyplatí vsadit na zkušenost profesionálů.
+          </p>
+          <div data-w-id="e8b42c4e-c9c9-b7d6-c8c5-8dba099e42ff" class="mene">
+            <a href="#" class="link-vice w-inline-block">
+              <div class="text-link">Méně</div>
+              <img
+                src="{% static 'images/Chevron-up.svg'%}"
+                alt=""
+                class="chevron-down"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="_4-vice">
+        <div class="big-numbers">04</div>
+        <div class="vice-wrapper">
+          <h2 class="heading-2">Právo IT</h2>
+          <p class="paragraph">
+            Podnikáte v IT? Nabízíme Vám komplexní služby v oblasti práva
+            informačních systémů, v oblasti práva autorského, pokud software či
+            hardware vyvíjíte, či pokud jste “pouhým” uživatelem těchto
+            nástrojů. Rovněž Vám pomůžeme ochránit vaše aktiva v kyberprostoru.
+          </p>
+          <div data-w-id="7e871026-a9e0-2826-ca39-7605daaba5af" class="mene">
+            <a href="#" class="link-vice w-inline-block">
+              <div class="text-link">Méně</div>
+              <img src="images/Chevron-up.svg" alt="" class="chevron-down" />
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="_5-vice">
+        <div class="big-numbers">05</div>
+        <div class="vice-wrapper">
+          <h2 class="heading-2">Trestní právo</h2>
+          <p class="paragraph">
+            Pokud se ocitnete v procesním postavení podezřelého, obviněného,
+            odsouzeného nebo svědka, tak potřebujete naši pomoc. Jsme připraveni
+            Vám i  Vašim blízkým zajistit obhajobu jak v přípravném řízení, tak
+            i v řízeních před soudy všech stupňů. Úvodem zpracujeme rešerše
+            daného případu, jeho analýzu a navrhneme Vám nejlepší způsob řešení
+            Vašeho případu. O všem jsme připraveni diskutovat. Spolupracujeme
+            s osvědčenými detektivy a specialisty v technických oborech, kteří
+            jsou i soudem jmenovanými znalci.Pokud jste se setkali ve svém okolí
+            s domácím násilí či jiným způsobem agrese a potřebujete zajistit
+            ochranu, máte obavu o reakce rodiny či okolí. Spolupracujeme
+            s psychology a máme pro Vás komplexní řešení. Nejen vykázání
+            agresora ze společného obydlí a zákaz vstupu do něj, ale i následné
+            uplatnění nároků souvisejících se způsobenou újmou.
+          </p>
+          <div data-w-id="53b8d3e4-cee2-9340-490b-2403c5a8e542" class="mene">
+            <a href="#" class="link-vice w-inline-block">
+              <div class="text-link">Méně</div>
+              <img
+                src="{% static 'images/Chevron-up.svg'%}"
+                alt=""
+                class="chevron-down"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="_6-vice">
+        <div class="big-numbers">06</div>
+        <div class="vice-wrapper">
+          <h2 class="heading-2">Sportovní právo</h2>
+          <p class="paragraph">
+            Znalost sportovního prostředí nám umožňuje nabídnout klientům
+            komplexní servis v oblasti sportovního práva, a to jak individuálním
+            sportovcům, tak i sportovním klubům. Nespecializujeme se pouze na
+            právo, ale poskytneme poradenství zahrnující i ekonomické a daňové
+            aspekty. Není třeba čekat až dojde ke sporu, ale je třeba sporů
+            předcházet. Profesní zkušenost jednoho z partnerů z disciplinárních
+            řízení je klienty využívána zejména v řešení sporů, ale i v rámci
+            prevence a vypracování pravidel, směrnic a smluvní dokumentace.
+            Samozřejmostí je i poskytování právního a daňového servisu v oblasti
+            sportovního marketingu, managementu a sponzoringu. Poskytneme Vám
+            veškeré právní služby související se založením, změnou či zánikem
+            sportovní organizace, včetně zápisu do veřejného rejstříku,
+            poskytnutím sídla a zajištěním řádného vedení účetnictví.
+          </p>
+          <div data-w-id="2a12a741-e76a-f774-366b-1c50dddd61bf" class="mene">
+            <a href="#" class="link-vice w-inline-block">
+              <div class="text-link">Méně</div>
+              <img
+                src="{% static 'images/Chevron-up.svg' %}"
+                alt=""
+                class="chevron-down"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="Onas" class="o-nas">
+  <div class="body-container o-nas">
+    <h1 class="heading-h1 left-align">
+      Spolehlivost, zkušenost a jasný cíl jsou důvody proč jsme vyhledávanou
+      kanceláří.
+    </h1>
+    <div class="o-nas-wrapper">
+      <p class="paragraph-8">
+        Čas pro nás nehraje roli a žádná kauza není malá. Tým našich
+        spolupracujících advokátů má dlouholeté nabyté profesní zkušenosti
+        v oblasti trestního práva. Právě využití pohledů ze všech stran je
+        zásadní výhodou zpracování každé kauzy. Je standardem, že pro klienty
+        řešíme i jejich pracovní a osobní problémy. Pro naše klienty zajišťujeme
+        komplexní právní poradenství v oblasti trestního práva, insolvenčního
+        práva a práva IT. Jsme specialisté v oblasti rodinného, občanského,
+        sportovního a korporátního práva. Zajišťujeme u partnerských advokátních
+        kanceláří v zahraničí právní poradenství, asistujeme při jednáních,
+        podílíme se na obchodních transakcích našich klientů a jejich obchodních
+        partnerů. Důvěru, kterou v nás klienti mají, si zasloužíme.
+      </p>
+      <div class="picture-wraper"></div>
+    </div>
+  </div>
+</section>
+<div class="cta">
+  <h1 class="heading-h1 white-text center">
+    Neváhejte nás kontaktovat. Sjednejte si s námi schůzku, kde probereme
+    podrobnosti.
+  </h1>
+  <a
+    href="mailto:info@mdhlegal.cz?subject=Kontakt%20MDH%20LEGAL%20web"
+    class="cta-button w-button"
+    >Kontaktujte nás</a
+  >
+</div>
+<footer id="kontakt" class="footer body-container">
+  <div class="w-layout-grid grid-2">
+    <img
+      src="{% static 'images/Logo-footer.svg'%}"
+      id="w-node-_96a26621-8d03-a6e0-fbe0-c65af3d5e90b-b66814c6"
+      alt=""
+    />
+    <div
+      id="w-node-cceb3e69-885f-d7fb-1f48-53edb60a4794-b66814c6"
+      class="footer-wraper"
+    >
+      <div class="footer-nadpis">Sitemap</div>
+      <a href="#Home" class="link-footer">Home</a>
+      <a href="#Sluzby" class="link-footer">Služby</a>
+      <a href="#Onas" class="link-footer">O nás</a>
+      <a href="#kontakt" class="link-footer">Kontakt</a>
+    </div>
+    <div
+      id="w-node-d84b9a41-09aa-7bc6-2a74-69c9fd577f37-b66814c6"
+      class="footer-wraper"
+    >
+      <div class="footer-nadpis">Kontakt</div>
+      <div id="kontakt-wrapper" class="kontakt-wrapper">
+        <img
+          src="{% static 'images/bxs-phone.svg'%}"
+          alt=""
+          class="kontakt-icon"
+        />
+        <div class="phone-wrapper">
+          <a href="tel:+420241810010" class="link-footer">+420 241 810 010</a>
+          <a href="tel:+420241810020" class="link-footer">+420 241 810 020</a>
+          <a href="tel:+420604216745" class="link-footer">+420 604 216 745</a>
+        </div>
+      </div>
+      <div id="kontakt-wrapper" class="kontakt-wrapper">
+        <img
+          src="{% static 'images/bxs-envelope.svg'%}"
+          alt=""
+          class="kontakt-icon"
+        />
+        <a
+          href="mailto:info@mdhlegal.cz?subject=Kontak%20MDH%20LEGAL%20web"
+          class="link-footer"
+          >david.prusa@mdhlegal.cz</a
+        >
+      </div>
+      <div id="kontakt-wrapper" class="kontakt-wrapper">
+        <img
+          src="{% static 'images/bxs-map.svg'%}"
+          alt=""
+          class="kontakt-icon"
+        />
+        <a
+          href="https://www.google.com/maps/place/V+Luhu+754,+140+00+Praha+4-Nusle/data=!4m2!3m1!1s0x470b9387826ffff5:0xc6efbcf3982fec19?sa=X&amp;ved=2ahUKEwiI3J6FnuvqAhVJecAKHX-0AQQQ8gEwAHoECAsQAQ"
+          target="_blank"
+          class="link-footer"
+          >V luhu 754/18, 140 00 Praha 4, <br />Czech Republic</a
+        >
+      </div>
+    </div>
+    <div
+      id="w-node-e02d6b0c-222b-4edc-6dd1-1318cf627da0-b66814c6"
+      class="div-block-3"
+    ></div>
+    <div
+      id="w-node-_4c20dedd-a5ad-de65-8e5f-cd6ab48530ff-b66814c6"
+      class="div-block-4"
+    >
+      <div class="text-block">
+        Created by
+        <a href="http://www.ewok.studio" class="link2">EWOK studio s.r.o.</a>
+      </div>
+      <div class="div-block-5">
+        <a href="#" class="link2">Privacy policy</a>
+        <a href="#" class="link2">Terms of use</a>
+      </div>
+    </div>
+    <div
+      id="w-node-_4427da15-67d5-f707-6c1b-96afefcf2a4c-b66814c6"
+      class="footer-wraper right"
+    >
+      <div class="footer-nadpis">Sociální sítě</div>
+      <div class="form-block w-form">
+        {% comment %}
+        <form
+          id="email-form"
+          name="email-form"
+          data-name="Email Form"
+          method="get"
+          class="form"
+        >
+          <input
+            type="email"
+            class="newsletter-pole w-input"
+            maxlength="256"
+            name="email"
+            data-name="Email"
+            placeholder="Email"
+            id="email"
+            required=""
+          /><input
+            type="submit"
+            value="Odeslat"
+            data-wait="Please wait..."
+            class="submit-button w-button"
+          />
+        </form>
+        {% endcomment %}
+        <div class="w-form-done">
+          <div>Thank you! Your submission has been received!</div>
+        </div>
+        <div class="w-form-fail">
+          <div>Oops! Something went wrong while submitting the form.</div>
+        </div>
+      </div>
+      <div class="social-sites">
+        <a
+          href="https://www.facebook.com/mdhlegalcz"
+          target="_blank"
+          class="link-block-4 w-inline-block"
+          ><img
+            src="{% static 'images/Facebook.svg' %}"
+            id="section"
+            alt=""
+            class="soc-footer"
+        /></a>
+      </div>
+    </div>
+  </div>
+</footer>
+<script
+  src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=5e9982c064dcbf323b6814c5"
+  type="text/javascript"
+  integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+  crossorigin="anonymous"
+></script>
+<script src="{% static 'js/webflow.js'%}" type="text/javascript"></script>
+
+{% endblock %}

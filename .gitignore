@@ -145,3 +145,5 @@ dmypy.json
 cython_debug/
 
 static/images
+
+db.sqlite3

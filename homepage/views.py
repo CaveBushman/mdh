@@ -1,5 +1,8 @@
 from django.shortcuts import render
 from cases.models import Case
+import requests
+import requests.packages
+from django.core.files.storage import FileSystemStorage
 
 # Create your views here.
 
@@ -23,6 +26,13 @@ def premiot(request):
         file01 = request.FILES.get('file_input_01')
         file02 = request.FILES.get('file_input_02')
         file03 = request.FILES.get('file_input_03')
+        print (request.FILES)
+        if 'file_input_01' in request.FILES:
+            print ("Ukládám první soubor")
+            file_01_name = file01.name
+            fs = FileSystemStorage('media/files')
+            filename = fs.save(file_01_name, file01)
+            file01 = fs.url(filename)
     
         case = Case.objects.create()
         case.name = "Premiot"

@@ -1,7 +1,5 @@
 from django.shortcuts import render
 from cases.models import Case
-import requests
-import requests.packages
 from django.core.files.storage import FileSystemStorage
 
 # Create your views here.

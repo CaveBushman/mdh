@@ -1,4 +1,4 @@
-#!/Users/davidprusa/Development/django_project/env/bin/python3
+#!/Users/david/Developer/mdh/env/bin/python3
 # -*- coding: utf-8 -*-
 import re
 import sys
